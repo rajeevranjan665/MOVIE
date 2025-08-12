@@ -10,8 +10,9 @@ Original file is located at
 import numpy as np
 import pandas as pd
 
+url = "https://drive.google.com/file/d/1t9hNp5K4w1YmBtvTI9B822h-2v5DY9pH/view?usp=sharing"
 movies = pd.read_csv('tmdb_5000_movies.csv')
-credits = pd.read_csv('tmdb_5000_credits.csv')
+credits = pd.read_csv(url)
 
 
 movies.head()
