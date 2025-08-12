@@ -32,8 +32,8 @@ movies.info()
 import pandas as pd
 
 # Load the datasets
-movies = pd.read_csv('/content/tmdb_5000_movies.csv')
-credits = pd.read_csv('/content/tmdb_5000_credits.csv')
+movies = pd.read_csv('tmdb_5000_movies.csv')
+credits = pd.read_csv("credits.csv.gz", compression="gzip")
 
 # Merge the datasets on 'title'
 movies = movies.merge(credits, on='title')
