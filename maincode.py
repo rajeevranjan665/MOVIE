@@ -10,8 +10,7 @@ Original file is located at
 import numpy as np
 import pandas as pd
 
-url = "https://drive.google.com/uc?id=1ABC123xyzID"
-credits = pd.read_csv(url)
+credits = pd.read_csv("credits.csv.gz", compression="gzip")
 movies = pd.read_csv('tmdb_5000_movies.csv')
 #credits = pd.read_csv(url)
 
